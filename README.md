@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # API Testing using C#
 Testing framework that tests API endpoints
 - compare to json schema
@@ -15,3 +16,6 @@ Things that are still left to do
 further down the future
 - graphQL
 - MQ
+=======
+init
+>>>>>>> de601c0fc7f9d4596d17d694750da7c465304b81
