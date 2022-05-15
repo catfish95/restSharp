@@ -3,6 +3,12 @@
   "$schema": "https://api.agify.io/schema",
   "title": "Person",
   "type": "object",
+  //-- additional properties means possibly more json properties from call
+  "additionalProperties": true,
+  //-- must be in the call
+  "required": [ "name", "age", "count" ],
+  //-- cannot be in the call
+  "not": { "required": ["mystery"] },
   "properties": {
     "name": {
       "description": "The searched person's name.",

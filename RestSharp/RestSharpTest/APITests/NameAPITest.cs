@@ -29,7 +29,7 @@ namespace RestSharpTest.APITests
         [TestCase("name", "Jason", "responseSchema/NameAPISchema.json")]
         public async Task GetNameToAge_VerifySchema_ShouldBeOK(string name, string value, string validationPath) 
         {
-            JsonSchema schema = getSchema.GetSchemaFromProject(validationPath);
+            JSchema schema = getSchema.GetSchemaFromProject(validationPath);
             NameAPI nameAPI;
             RestRequest request = new RestRequest().AddParameter(name, value);
 
@@ -39,7 +39,7 @@ namespace RestSharpTest.APITests
             Console.WriteLine("Validating Response code = 200");
             Assert.That(response.r.StatusCode, Is.EqualTo(HttpStatusCode.OK));
 
-            // -- Response Time
+            // -- Response response Time
             Console.WriteLine("Response time: " + response.t.Milliseconds + " < 5000");
             Assert.That(response.t.Milliseconds, Is.LessThan(5000)); 
 

@@ -9,10 +9,10 @@ namespace RestSharpTest.utils
 {
     public class GetJsonSchema
     {
-        public JsonSchema GetSchemaFromProject(string path)
+        public JSchema GetSchemaFromProject(string path)
         {
             using TextReader reader = File.OpenText(@path);
-                return JsonSchema.Read(new JsonTextReader(reader));
+                return JSchema.Load(new JsonTextReader(reader));
         }
     }
 }
