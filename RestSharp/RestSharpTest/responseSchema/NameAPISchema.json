@@ -1,0 +1,23 @@
+﻿{
+  "$id": "https://api.agify.io/",
+  "$schema": "https://api.agify.io/schema",
+  "title": "Person",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "The searched person's name.",
+      "type": "string"
+    },
+    "age": {
+      "description": "Person life expectancy",
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 200
+    },
+    "count": {
+      "description": "Count of times searched by other users",
+      "type": "integer",
+      "minimum": 0
+    }
+  }
+}
