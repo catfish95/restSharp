@@ -11,7 +11,7 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using RestSharpTest.extensionMethods;
 
-namespace RestSharpTest.singleAPITest
+namespace RestSharpTest.APITests
 {
     public class NameAPITest
     { 

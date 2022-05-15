@@ -17,10 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-	<Folder Include="model\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Resource Include="model\NameAPI.cs" />
     <Resource Include="model\NameAPISchema.json" />
   </ItemGroup>
@@ -29,6 +25,23 @@
     <None Update="responseSchema\NameAPISchema.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="responseSchema\PostAPITestSchema.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="testData\APIChainData.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="testData\NameAPIData.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="testData\PostAPIData.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="model\ChainAPI\" />
+    <Folder Include="responseSchema\ChainAPISchema\" />
   </ItemGroup>
 
 </Project>
