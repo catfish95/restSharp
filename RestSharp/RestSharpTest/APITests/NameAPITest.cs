@@ -41,7 +41,7 @@ namespace RestSharpTest.APITests
 
             // -- Response response Time
             Console.WriteLine("Response time: " + response.t.Milliseconds + " < 5000");
-            Assert.That(response.t.Milliseconds, Is.LessThan(5000)); 
+            Assert.That(response.t.Milliseconds, Is.LessThan(5000));
 
             //-- validate headers
             Console.WriteLine("Get Headers from response > 0");
